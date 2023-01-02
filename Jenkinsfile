@@ -1,11 +1,11 @@
-Jenkinsfile (Declarative Pipeline)
-/* Requires the Docker Pipeline plugin */
+
+/* bef test Jenkins pipeline */
 pipeline {
-    agent { docker { image 'maven:3.8.6-openjdk-11-slim' } }
+    agent any
     stages {
         stage('build') {
             steps {
-                sh 'mvn --version'
+                sh 'java -version'
             }
         }
     }
