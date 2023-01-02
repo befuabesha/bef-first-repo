@@ -1,5 +1,5 @@
 
-/* Requires the Docker Pipeline plugin */
+/* bef test Jenkins pipeline */
 pipeline {
     agent any
     stages {
